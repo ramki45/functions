@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //print odd numbers in an array using anonymous function
+        var odd = function(){
+            var dude = [];
+            for(i=0; i<=10; i++){
+                if(i %2 !== 0){
+
+                    dude.push(i);
+                   
+                }
+            }
+            console.log(dude);
+        }
+        odd();
+
+        //arrow function
+        var odd1 = () => {
+            var dude1 = [];
+            for(i=0; i<=10; i++){
+                if(i %2 !== 0){
+
+                    dude1.push(i);
+                   
+                }
+            }
+            console.log(dude1);
+        }
+        odd1();
+
+
+        //convert all the string to caps in a string array
+        
+        var empty = [];
+        var str = function(){
+            empty.push('hello'.toUpperCase());
+            console.log(empty);
+
+        }
+        str();
+          
+        // arrow function
+            var empty1 = [];
+            var str1 = () => {
+            empty1.push('hello'.toUpperCase());
+            console.log(empty1);
+
+        }
+        str();
+
+
+        //sum of all numbers in an array
+        const sum = [1, 2, 3,4].reduce(add, 0); 
+
+        function add(accumulator, a) {
+        return accumulator + a;
+        }
+
+        console.log(sum);
+
+        //arrow function
+        const sum1 = [1, 2, 3,4].reduce(add, 0); 
+
+        var add = (accumulator, a)=>  {
+        return accumulator + a;
+        }
+
+        console.log(sum1);
+
+    </script>
+</body>
+</html>
